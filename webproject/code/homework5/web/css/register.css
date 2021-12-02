@@ -1,0 +1,102 @@
+.register{
+    margin: -8px;
+    user-select: none;
+}
+
+.register-lunbo{
+    width: 100vw;
+    height: 100vh;
+}
+
+#lunboimg{
+    width: 100vw;
+    height: 100vh;
+}
+
+.register-logo{
+    position:absolute;
+    width: 1000px;
+    top: -30px;
+    left: 2vw;
+}
+
+#logoimg{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.register-logo-text{
+    position: relative;
+    top: 10vh;
+    left: -20px;
+    font-size: 30px;
+}
+
+.register-infor{
+    position: fixed;
+    top: 0;
+    left: 30%;
+    width: 600px;
+    height: 100vh;
+    /*background-color:#000;
+    background: rgba(0, 0, 0, 0.5);*/
+}
+
+.register-infor-insert{
+    position: absolute;
+    background-color: #f3f8feaa;
+    top: 15vh;
+    left: 100px;
+    width: 410px;
+    height: 65vh;
+    opacity:1;
+    border-radius: 10px;
+}
+
+.register-infor-developer{
+    position: relative;
+    top: 81vh;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.register-infor-insert-content{
+    position: absolute;
+    top: 15px;
+    left: 35%;
+    font-size: 30px;
+}
+
+.biaodan{
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 10%;
+    font-size: 20px;
+    text-align: right;
+}
+
+.biaodan-input{
+    margin: 30px 0;
+}
+
+.biaodan-input>input{
+    text-align: left;
+    height: 30px;
+    width: 252px;
+    border-radius: 5px;
+}
+
+.register-button{
+    position: relative;
+    top: 20px;
+    font-size: 30px;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+}

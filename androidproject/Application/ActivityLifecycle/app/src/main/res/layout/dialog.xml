@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dialog">
+
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="300px"
+        android:background="#FF9800">
+
+        <TextView
+            android:id="@+id/dialogtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="50px"
+            android:layout_marginRight="100px"
+            android:text="Simple Dialog"
+            android:textSize="80px" />
+
+        <Button
+            android:id="@+id/dialogbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialogtitle"
+            android:layout_marginLeft="230px"
+            android:layout_marginTop="50px"
+            android:layout_marginBottom="30px"
+            android:text="Close"
+            android:textSize="50px" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

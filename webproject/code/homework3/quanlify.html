@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>表单验证</title>
+    <style>
+        .class1{
+            background-color: bisque;
+            width: 350px;
+            margin-left: 450px;
+            padding: 1px;
+        }
+        b {
+            display: inline-block;
+            padding: 3px 10px;
+            text-align: right;
+            width: 100px;
+        }
+
+        p {
+            margin-left: 130px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<script>
+    function inputBlur(x, y) {
+        if (document.getElementById(x).value == "") {
+            error(y);
+        }
+        else {
+            getRegMsg(x, y);
+        }
+    }
+
+    function error(y) {
+        y = document.getElementById(y);
+        y.innerHTML = "输入不能为空";
+        y.style.color = "blue";
+    }
+
+    function getRegMsg(x, y) {
+        var pattuser = /^[a-zA-a]{4,12}$/;
+        var pattpasspword = /^\w{6,20}$/;
+        var pattrepassword = RegExp('^' + password.value + '$');
+        var patttel = /^(13|14|15|17|18)\d{9}$/;
+        var pattemail = RegExp('^' + user.value + '@[a-zA-Z0-9_]{2,}$');
+
+        var tmp = document.getElementById(x);
+        var tmpout = document.getElementById(y);
+
+        if (x == "user") {
+            if (!pattuser.test(tmp.value)) {
+                tmpout.innerHTML = "输入错误，用户名为4-12个英文字母";
+                tmpout.style.color = "red";
+            }
+            else {
+                tmpout.innerHTML = "输入正确";
+                tmpout.style.color = "green";
+            }
+        }
+        else if(x == "password"){
+            if (!pattpasspword.test(tmp.value)) {
+                tmpout.innerHTML = "输入错误，密码为6-20位";
+                tmpout.style.color = "red";
+            }
+            else {
+                tmpout.innerHTML = "输入正确";
+                tmpout.style.color = "green";
+            }
+        }
+        else if(x == "repassword"){
+            if (!pattrepassword.test(tmp.value)) {
+                tmpout.innerHTML = "输入错误，和密码不同";
+                tmpout.style.color = "red";
+            }
+            else {
+                tmpout.innerHTML = "输入正确";
+                tmpout.style.color = "green";
+            }
+        }
+        else if(x == "tel"){
+            if (!patttel.test(tmp.value)) {
+                tmpout.innerHTML = "输入错误，手机号为11位数字";
+                tmpout.style.color = "red";
+            }
+            else {
+                tmpout.innerHTML = "输入正确";
+                tmpout.style.color = "green";
+            }
+        }
+        else if(x == "email"){
+            if (!pattemail.test(tmp.value)) {
+                tmpout.innerHTML = "输入错误，邮箱为用户名@域名";
+                tmpout.style.color = "red";
+            }
+            else {
+                tmpout.innerHTML = "输入正确";
+                tmpout.style.color = "green";
+            }
+        }
+    }
+
+    function update(){
+        document.getElementById("id1").innerHTML = "<div> <h1 style='margin-left:30px;'> 后端加急开发中…… </h1></div>";
+    }
+</script>
+
+<body>
+    <div id="id1" class="class1">
+        <h1 style="margin-left: 120px;">表单验证</h1>
+        <b>用户名</b>
+        <input id="user" onBlur="inputBlur('user','userout')" placeholder="请输入用户名" />
+        <br>
+        <p id="userout"></p>
+
+        <b>密码</b>
+        <input type="password" id="password" οnfοcus="function_1()" onBlur="inputBlur('password','passwordout')" placeholder="请输入密码" />
+        <br>
+        <p id="passwordout"></p>
+
+        <b>再次确认</b>
+        <input type="password" id="repassword" οnfοcus="function_1()" onBlur="inputBlur('repassword','repasswordout')"
+            placeholder="请再次输入密码" />
+        <br>
+        <p id="repasswordout"></p>
+
+        <b>联系方式</b>
+        <input id="tel" οnfοcus="function_1()" onBlur="inputBlur('tel','telout')" placeholder="请输入电话" />
+        <br>
+        <p id="telout"></p>
+
+        <b>邮箱</b>
+        <input id="email" οnfοcus="function_1()" onBlur="inputBlur('email','emailout')" placeholder="请输入邮箱" />
+        <br>
+        <p id="emailout"></p>
+
+        <button style="margin-bottom: 5px; margin-left: 140px; width: 100px; height: auto;" onclick="update()"> 登录 </button>
+    </div>
+
+</body>
+
+</html>

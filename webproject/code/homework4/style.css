@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.head {
+    z-index: 9990;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 110px;
+    font-size: 21px;
+    background: url(https://www.csu.edu.cn/images/fd-bg1.png);
+}
+
+.left {
+    margin-top: 30px;
+    margin-left: 90px;
+    float: left;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.textcontent {
+    z-index: 1;
+    padding: 0 10px;
+    display: inline-block;
+    height: 47px;
+}
+
+.right {
+    color: white;
+    margin-top: 30px;
+    margin-right: 90px;
+    float: right;
+    margin-bottom: 20px;
+}
+
+.que_button {
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    right: -30px;
+    width: 90px;
+}
+
+.avatar {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    left: 600px;
+}
+
+#box {
+    top: 110px;
+    width: 100%;
+    height: 645px;
+    overflow: hidden;
+    position: relative;
+}
+
+#lunboimg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+}
+
+#lunboimg>a {
+    width: 100%;
+    height: auto;
+}
+
+#lunboimg>a>img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+#selector {
+    z-index: 9000;
+    display: flex;
+    width: 500px;
+    height: 20px;
+    position: absolute;
+    left: 660px;
+    bottom: 5px;
+}
+
+#selector>span {
+    width: 40px;
+    height: 5px;
+    border-radius: 5%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+#selector>span:hover {
+    background-color: orange;
+}
+
+.class2 {
+    z-index: 9001;
+    width: 99%;
+    height: auto;
+}
+
+.bottombar {
+    position: absolute;
+    width: 99%;
+    height: 63px;
+    margin-top: 70px;
+    margin-left: 6px;
+}
+
+.fright {
+    position: fixed;
+    top: 200px;
+    right: 0px;
+    width: 140px;
+    height: 420px;
+    z-index: 99;
+}
+
+.frightdiv {
+    background-color: #0651a2;
+    margin-top: 2px;
+    width: 50px;
+    height: 50px;
+    margin-left: 89px;
+    overflow: hidden;
+    padding-top: 1px;
+}
+
+.frightimg{
+    float: left;
+}
+
+.frighttext {
+    height: 50px;
+    width: 130px;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #bcd5fc;
+}
+
+.jiantou{
+    width: 50px; 
+    height: 50px;
+    margin-left: 89px;
+}
+
+.foot {
+    background-color: #0651a2;
+    margin-top: 110px;
+    width: 100%;
+    height: 180px;
+    padding-top: 60px;
+    z-index: 9000;
+}
+
+.fd-txt {
+    float: left;
+    overflow: hidden;
+}
+
+.fd-logo {
+    float: left;
+    width: 290px;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+.addr {
+    font-size: 14px;
+    color: #deebf8;
+    line-height: 2.58em;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-right: 200px;
+}
+
+.fd-shre {
+    margin-top: 50px;
+}
+
+.fd-wp {
+    margin-top: 45px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    padding: 1px 0;
+    background-color: #002e61;
+    color: aliceblue;
+    font-size: 14px;
+}
+
+fd-wp.a {
+    text-decoration: none;
+}
+
+.dd1{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 18.2%;
+    height: 0px;
+    background-color: #f2f2f2;
+    z-index: 9990;
+    border-top-style: solid;
+    border-color: #EB9C18;
+    transition: all .1s linear;
+    animation-name: exampledd1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.dd2 {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 18.2%;
+    height: 0px;
+    background-color: #f2f2f2;
+    z-index: 9990;
+    border-top-style: solid;
+    border-color: #EB9C18;
+    transition: all .1s linear;
+    animation-name: exampledd2;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+}
+
+.edu:hover+.dd1 {
+    display: block;
+    right: 15%;
+    height: fit-content;
+}
+
+.exper:hover+.dd2 {
+    display: block;
+    right: 10%;
+    height: fit-content;
+}
+
+@keyframes exampledd1 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 450px;
+    }
+}
+
+@keyframes exampledd2 {
+    from {
+        height: 0px;
+    }
+
+    to {
+        height: 310px;
+    }
+}
+
+.dd1:hover{
+    display: block;
+    right: 15%;
+    height: fit-content;
+}
+
+.dd2:hover{
+    display: block;
+    right: 10%;
+    height: fit-content;
+}
+
+dd {
+    float: left;
+}
+
+#jiaoyujigou {
+    width: 450px;
+}
+
+#jiaoyujigou>a, #jiaoyujigou>div {
+    text-align: left;
+    float: left;
+    width: 225px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+#yanjiujigou {
+    width: 750px;
+}
+
+#yanjiujigou>a {
+    text-align: left;
+    float: left;
+    width: 375px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+}
+
+.sub1, .sub2, .sub3, .sub4, .sub5, .sub6, .sub7, .sub8 {
+    display: none;
+    z-index: 9991;
+    position: absolute;
+    margin-top: 24px;
+    width: 900px;
+    height: 0px;
+    background-color: #f2f2f2;
+    border-top-style: solid;
+    border-color: #0099ff;
+    animation-name: example1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.shuxian {
+    height: 24px;
+    width: 3px;
+    margin-top: -26px;
+    margin-left: 4.8%;
+    background-color: #0099ff;
+}
+
+.hengxian {
+    width: 88px;
+    height: 5px;
+    margin-top: -28px;
+    margin-left: 0%;
+    background-color: #0099ff;
+}
+
+.shuxian1 {
+    height: 24px;
+    width: 3px;
+    margin-top: -26px;
+    margin-left: 95.3%;
+    background-color: #0099ff;
+}
+
+.hengxian1 {
+    width: 88px;
+    height: 5px;
+    margin-top: -28px;
+    margin-left: 90.4%;
+    background-color: #0099ff;
+}
+
+.clearfix {
+    float: left;
+    width: 600px;
+    height: auto;
+}
+
+.clearfix>dd {
+    color: black;
+    width: 170px;
+    height: auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.clearfix>dd>a {
+    color: black;
+    font-size: 16px;
+}
+
+.navpic {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.zoujin:hover+.sub1 , .sub1:hover {
+    display: block;
+    top: 110px;
+    left: 6.6%;
+}
+
+.jiaoyu:hover+.sub2 , .sub2:hover {
+    display: block;
+    top: 110px;
+    left: 14.1%;
+}
+
+.xueyuan:hover+.sub3 , .sub3:hover  {
+    display: block;
+    top: 110px;
+    left: 21.7%;
+}
+
+.shizi:hover+.sub4 , .sub4:hover  {
+    display: block;
+    top: 110px;
+    left: 29.2%;
+}
+
+.kexue:hover+.sub5 , .sub5:hover  {
+    display: block;
+    top: 110px;
+    right: 29.3%;
+}
+
+.zhaosheng:hover+.sub6 , .sub6:hover  {
+    display: block;
+    top: 110px;
+    right: 21.8%;
+    opacity: 100;
+}
+
+.hezuo:hover+.sub7 , .sub7:hover  {
+    display: block;
+    top: 110px;
+    right: 14.1%;
+}
+
+.xuesheng:hover+.sub8 , .sub8:hover  {
+    display: block;
+    top: 110px;
+    right: 6.7%;
+}
+
+@keyframes example1 {
+    from {
+        height: 130px;
+    }
+
+    to {
+        height: 190px;
+    }
+}
+
+.questiontext {
+    display: none;
+    position: absolute;
+    width: 600px;
+    height: 80px;
+    background-color: #02468f;
+    left: 960px;
+    padding-top: 20px;
+    top: 10px;
+}
+
+.gotop{
+    position:fixed; 
+    right: 110px;
+    bottom: 50px;
+    width: 50px;
+    height: 60px;
+    z-index: 9999;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+    <script type="text/javascript">
+        var strs = "";
+        var result = "";
+        var patt = /^[0-9]+.?[0-9]*/;
+
+        function OnClick(obj) {
+            var str = obj.innerText;
+
+            var input1 = document.getElementById("input1");
+            var input2 = document.getElementById("input2");
+            var output = document.getElementById("output");
+
+            if (input2.value == '0' && str == '/'){
+                alert('除数不能为0');
+            }
+            else if (patt.test(input1.value) && patt.test(input2.value)) {
+                strs = input1.value + str + input2.value;
+                result = eval(strs);
+                output.value = result;
+            }
+            else{
+                alert('输入格式错误，输入框不能输入字母');
+            }
+        }
+    </script>
+    <style>
+        .calc{
+            margin-left: 500px;
+        }
+        b {
+            padding: 3px 10px;
+            text-align: right;
+            width: 150px;
+        }
+        table{
+            margin-top: 15px;
+            display: inline-block;
+        }
+        td{
+            font-size: 25px;
+        }
+        div{
+            background-color: aquamarine;
+            width: 260px;
+            margin-left: 100px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calc">
+        <h1 style="margin-left: 50px;">简易计算器</h1>
+        <b>输入框</b>
+        <input type="text" id="input1">
+        <br>
+        <b>输入框</b>
+        <input type="text" id="input2">
+        <br>
+        <b>运算符</b>
+        <table border="1px"  bgcolor="lightgray" bordercolor="white">
+            <tr>
+                <td onclick="OnClick(this)"> + </td>
+                <td onclick="OnClick(this)"> - </td>
+                <td onclick="OnClick(this)"> * </td>
+                <td onclick="OnClick(this)"> / </td>
+            </tr>
+        </table>
+        <br>
+        <b>输出框</b>
+        <input type="text" id="output">
+        <br>  
+    </div>
+</body>
+
+</html>

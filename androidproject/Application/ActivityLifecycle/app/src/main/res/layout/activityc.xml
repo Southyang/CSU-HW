@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0000"
+    tools:context=".activity_C">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15px"
+        android:text="Activity C"
+        android:textColor="#C4FFFFFF"
+        android:textSize="150px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/buttonlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="80px"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/StartA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start A" />
+
+        <Button
+            android:id="@+id/StartB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start B" />
+
+        <Button
+            android:id="@+id/FinishC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Finish C" />
+
+        <Button
+            android:id="@+id/Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dialog" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonlist"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:text="Lifecycle Method List"
+        android:textColor="#C4FFFFFF"
+        android:textSize="70px" />
+
+    <TextView
+        android:id="@+id/methodlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/method"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:width="1030px"
+        android:height="300px"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        android:text="test"
+        android:textSize="50px" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/methodlist"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="300px"
+        android:text="Activity Status"
+        android:textColor="#C4FFFFFF"
+        android:textSize="70px" />
+
+    <TextView
+        android:id="@+id/statuslist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="10px"
+        android:width="1030px"
+        android:height="300px"
+        android:background="#FFFFFF"
+        android:scrollbars="vertical"
+        android:text="test"
+        android:textSize="50px" />
+
+
+</RelativeLayout>

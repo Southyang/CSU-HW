@@ -1,0 +1,231 @@
+.login-menhu{
+    margin: -8px;
+    user-select: none;
+}
+
+.login-menhu-lunbo{
+    width: 100vw;
+    height: 100vh;
+}
+
+#lunboimg{
+    width: 100vw;
+    height: 100vh;
+}
+
+.login-menhu-logo{
+    position:absolute;
+    width: 1000px;
+    top:1vh;
+    left: 5vw;
+}
+
+#logoimg{
+    width: 200px;
+    height: 200px;
+    float: left;
+}
+
+.login-menhu-logo-text{
+    position: relative;
+    top: 10vh;
+    left: -20px;
+    font-size: 30px;
+}
+
+.fenge{
+    height: 6vh;
+    width: 0.15vw;
+    background-color: white;
+    float: left;
+    margin:0 5px;
+}
+
+.login-menhu-infor{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 600px;
+    height: 100vh;
+    /*background-color:#000;
+    background: rgba(0, 0, 0, 0.5);*/
+}
+
+.login-menhu-infor-insert{
+    position: absolute;
+    background-color: #f3f8feaa;
+    top: 15vh;
+    left: 100px;
+    width: 410px;
+    height: 65vh;
+    opacity:1;
+    border-radius: 10px;
+}
+
+.choose{
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    font-size: 20px;
+}
+
+.zhanghao{
+    position: relative;
+    top: 40px;
+    left: 80px;
+    display:inline;
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+#zhanghaohengxian{
+    background-color: deepskyblue;
+}
+
+.hengxian{
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    top: 35px;
+    left: -10px;
+    background-color: grey;
+}
+
+.youxiang{
+    position: relative;
+    top: 40px;
+    margin-left: 150px;
+    display:inline;
+    cursor: pointer;
+}
+
+.content{
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    height: 45vh;
+}
+
+.biaodan{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    font-size: 20px;
+    text-align: right;
+}
+
+.biaodan-input , .youxiangbiaodan-input{
+    margin: 20px 0;
+}
+
+.biaodan-input>input{
+    text-align: left;
+    height: 30px;
+    width: 252px;
+    border-radius: 5px;
+}
+
+.biaodan-input>img{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    top: 113px;
+    left: 180px;
+}
+
+.biaodan-input>img:hover , .youxiangbiaodan-input>img:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+    cursor: pointer;
+}
+
+.youxiangbiaodan{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 10%;
+    font-size: 20px;
+    text-align: right;
+}
+
+.youxiangbiaodan-input>input{
+    text-align: left;
+    height: 30px;
+    width: 252px;
+    border-radius: 5px;
+}
+
+.youxiangbiaodan-input>img{
+    position: absolute;
+    height: 60px;
+    width: 200px;
+    top: 58px;
+    left: 180px;
+}
+
+.huoqu{
+    position: absolute;
+    font-size: 15px;
+    width: 90px;
+    left: 220px;
+    top:130px;
+    color: deepskyblue;
+    background-color: white;
+    cursor: pointer;
+    height: auto;
+    border: 0;
+}
+
+.login-button1 , .login-button2{
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.otherthings{
+    position: relative;
+    top: 9vh;
+    width: 100%;
+    height: 10vh;
+}
+
+.otherthings-mima{
+    position: relative;
+    top: -25px;
+    left: 86px;
+    margin-bottom: 20px;
+}
+
+.otherthings-zhanghao{
+    position: relative;
+    top: -15px;
+    left: 86px;
+}
+
+.otherthings-mima>a , .otherthings-zhanghao>a{
+    margin: 0 21px;
+    display:inline;
+    background-color: antiquewhite;
+    padding: 5px 5px;
+    border-radius: 5px;
+    opacity: 0.8;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration:none;
+    color: black;
+}
+
+.login-menhu-infor-developer{
+    position: relative;
+    top: 81vh;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}

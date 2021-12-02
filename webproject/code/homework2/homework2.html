@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title> 个人简历 </title>
+    <style type="text/css">
+        @import "homework2.css";
+        p{
+            text-align: center;
+            font-size: 20px;
+        }
+        .foot{ 
+            position: fixed; 
+            left: 0px; 
+            bottom: 0px; 
+            width: 100%; 
+            height: 30px; 
+            background-color: rgb(12, 222, 250); 
+            z-index: 9999;
+        }
+        a:link {color:#000000;}      /* 未访问链接*/
+        a:visited {color:#0c0c0b;}  /* 已访问链接 */
+        a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+        a:active {color:#0000FF;}  /* 鼠标点击时 */
+    </style>
+</head>
+
+<body>
+    <!-- <header> 标签定义文档或者文档的一部分区域的页眉。 -->
+    <header>
+        <div id="datetime" height=20px class="Header">
+            <script>
+                setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+            </script>
+        </div>
+    </header>
+
+    <div class="menu">
+        <a href="./eduback.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="教育背景"> </a>
+        <a href="./ability.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="个人能力"> </a>
+        <a href="./group.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="校内组织"> </a>
+        <a href="./do.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="社会实践"> </a>
+        <a href="./record.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="获奖情况"> </a>
+        <a href="./match.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="比赛经历"> </a>
+        <a href="./readme.html" target="infor"> <input type="button" style="width:130px;height:60px;" value="自我评价"> </a>
+        <a href="./welcome.html" target="infor" style="width: 130px; height: 60px;">回到首页</a>
+    </div>
+
+<div class="class1">
+    <div class="title">
+        <h1> 个人简历 </h1>
+    </div>
+    <div class="class4">
+        <img src="../../res/homework2_res/avatar.jpg">
+    </div>
+    <img src="../../res/homework2_res/person.png" align="left">
+    <h1> 个人信息 </h1>
+    <br>
+    <ul>
+        <li> 姓名：杨昊楠 </li>
+        <br>
+        <li> 出生年月：20010909 </li>
+        <br>
+        <li> 籍贯：山西省朔州市 </li>
+        <br>
+        <li> 学历：本科在读 </li>
+        <br>
+        <li> 民族：汉 </li>
+    </ul>
+    <br>
+    <img src="../../res/homework2_res/tel.png" align="left">
+    <h1>联系方式</h1>
+    <br>
+    <ul>
+        <li> qq：386500102 </li>
+        <br>
+        <li> 电话：17873149260 </li>
+        <br>
+        <li> 微信：枏山柟 </li>
+        <br>
+        <li> 邮箱：8208190213@csu.edu.cn </li>
+        <br>
+        <li> 地址：中南大学升华学生公寓 </li>
+    </ul>
+    <br>
+    <img src="../../res/homework2_res/favorite.png" align="left">
+    <h1>兴趣爱好</h1>
+    <br>
+    <ul>
+        <li> 运动：打篮球、跑步 </li>
+        <br>
+        <li> 音乐：弹吉他、唱歌 </li>
+        <br>
+        <li> 学习：读书、编程 </li>
+    </ul>  
+</div>
+
+<div class="class2">
+    <iframe src="./welcome.html" width=89% height="100%" name="infor" frameborder="0">
+    </iframe>
+</div>
+
+<div class="foot">
+    <marquee>欢迎查看杨昊楠的个人简历。性别男，汉族，2001年出生，共青团员，是中南大学计算机学院计算机科学与技术专业的2019级本科生。
+        在从大一到大三的三年中均担任班级内班长一职，成绩优秀，曾获2019学年一等奖学金，万兴科技奖学金二等奖，并获“院优秀学生”、“院优秀学生干部”、
+        “朋辈心理互助队伍优秀干部”、“军训先进个人”等荣誉称号，创新创业项目获得校级、国家级立项。</marquee>
+</div>
+
+</body>
+</html>

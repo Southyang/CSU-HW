@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/tv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#72c1e1"
+        android:src="@drawable/ditu1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-18px"
+        android:layout_marginLeft="120px"
+        android:text="手势交互式系统"
+        android:textSize="120px" />
+
+    <TextView
+        android:id="@+id/action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:layout_marginTop="150px"
+        android:width="800px"
+        android:height="300px"
+        android:gravity="center"
+        android:text=""
+        android:textSize="120px" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300px"
+        android:maxHeight="300px"
+        android:layout_marginTop="1200px"
+        android:layout_marginLeft="240px"
+        android:adjustViewBounds="true"
+        android:src="@drawable/lan" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="切换"
+        android:textSize="80px"
+        android:layout_marginTop="2050px"
+        android:gravity="center"/>
+
+</RelativeLayout>
