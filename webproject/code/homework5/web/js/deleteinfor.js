@@ -3,16 +3,16 @@ function getXhr(){
     console.log(xhr);
     return xhr;
 }
-function modifypassword(){
+function deleteinfor(){
     var zhanghao = document.getElementById("inputzhanghao");
-    var password = document.getElementById("inputoldmima");
-    var newpass = document.getElementById("inputnewmima");
+    var password = document.getElementById("inputmima");
+    var youxiang = document.getElementById("inputyouxiang");
     //发送异步请求进行校验
     var xhr = getXhr();
     console.log(zhanghao.value);
     //设置请求信息
-    xhr.open("get" , "../Modifypassword?username=" + zhanghao.value + "&password=" + password.value
-        + "&newpassword=" + newpass.value, true);
+    xhr.open("get" , "../Deleteinfor?username=" + zhanghao.value + "&password=" + password.value
+        + "&youxiang=" + youxiang.value, true);
     //发送请求
     xhr.send();
     //监听readyState状态
@@ -22,7 +22,7 @@ function modifypassword(){
                 //获取响应数据
                 var msg = xhr.responseText;
                 //显示提示信息
-                alert("您的密码已成功修改");
+                alert("您的账号已注销");
                 //document.getElementById("passwordcontent").innerHTML = "您的密码为:" + msg;
             }
         }

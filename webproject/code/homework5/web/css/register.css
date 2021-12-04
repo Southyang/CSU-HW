@@ -36,7 +36,7 @@
 .register-infor{
     position: fixed;
     top: 0;
-    left: 30%;
+    left: 30vw;
     width: 600px;
     height: 100vh;
     /*background-color:#000;
@@ -99,4 +99,30 @@
     background-color: aqua;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.errorzhanghao{
+    position: absolute;
+    top: 66px;
+    left: 88px;
+    font-size: 18px;
+}
+
+.errorrepas{
+    position: absolute;
+    top: 190px;
+    left: 88px;
+    font-size: 18px;
+}
+
+.go-login{
+    position: fixed;
+    top: 1vh;
+    right: 1vh;
+    text-decoration:none;
+    background-color: deepskyblue;
+    border-radius: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: black;
 }

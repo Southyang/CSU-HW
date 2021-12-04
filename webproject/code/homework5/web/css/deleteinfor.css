@@ -1,9 +1,9 @@
-.modifypassword{
+.deleteinfor{
     margin: -8px;
     user-select: none;
 }
 
-.modifypassword-lunbo{
+.deleteinfor-lunbo{
     width: 100vw;
     height: 100vh;
 }
@@ -13,7 +13,7 @@
     height: 100vh;
 }
 
-.modifypassword-logo{
+.deleteinfor-logo{
     position:absolute;
     width: 1000px;
     top: -30px;
@@ -26,14 +26,14 @@
     float: left;
 }
 
-.modifypassword-logo-text{
+.deleteinfor-logo-text{
     position: relative;
     top: 10vh;
     left: -20px;
     font-size: 30px;
 }
 
-.modifypassword-infor{
+.deleteinfor-infor{
     position: fixed;
     top: 0;
     left: 30%;
@@ -43,7 +43,7 @@
     background: rgba(0, 0, 0, 0.5);*/
 }
 
-.modifypassword-infor-insert{
+.deleteinfor-infor-insert{
     position: absolute;
     background-color: #f3f8feaa;
     top: 15vh;
@@ -54,7 +54,7 @@
     border-radius: 10px;
 }
 
-.modifypassword-infor-developer{
+.deleteinfor-infor-developer{
     position: relative;
     top: 81vh;
     color: white;
@@ -62,7 +62,7 @@
     font-size: 15px;
 }
 
-.modifypassword-infor-insert-content{
+.deleteinfor-infor-insert-content{
     position: absolute;
     top: 15px;
     left: 35%;
@@ -89,7 +89,7 @@
     border-radius: 5px;
 }
 
-.modifypassword-button{
+.deleteinfor-button{
     position: relative;
     top: 20px;
     font-size: 30px;

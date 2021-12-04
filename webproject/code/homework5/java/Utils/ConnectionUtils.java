@@ -58,7 +58,7 @@ public class ConnectionUtils {
         tl.set(null);
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception{ //没啥用，测试代码，懒得删了
         Connection conn = getConn();
 
         Connection conn2 = getConn();

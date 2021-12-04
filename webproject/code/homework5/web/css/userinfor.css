@@ -1,0 +1,45 @@
+.go-login{
+    position: fixed;
+    top: 1vh;
+    right: 1vh;
+    text-decoration:none;
+    background-color: deepskyblue;
+    border-radius: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.edituser , .deleteuser , .adduser{
+    display: none;
+    position: absolute;
+    top: 30vh;
+    left: 35vw;
+    height: 260px;
+    font-size: 20px;
+    text-align: right;
+    background-color: deepskyblue;
+    padding: 0 15px;
+}
+
+input{
+    margin: 15px 0;
+    text-align: left;
+    height: 30px;
+    width: 252px;
+    border-radius: 5px;
+}
+
+div>a{
+    position: relative;
+    top: 10px;
+    font-size: 30px;
+    width: 200px;
+    margin: 0 20px;
+    padding: 0 20px;
+    display:inline;
+    background-color: aqua;
+    border-radius: 10px;
+    cursor: pointer;
+    color: black;
+}

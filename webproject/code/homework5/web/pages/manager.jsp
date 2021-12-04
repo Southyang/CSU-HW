@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>注册</title>
+    <title>管理员登录</title>
     <link rel="stylesheet" href="../css/manager.css">
 </head>
 <body>
@@ -36,15 +36,15 @@
             <div class="manager-infor-insert-content">
                 管理员登录
             </div>
-            <form method="POST" name="biaodanpost">
+            <form method="POST" name="biaodanpost" action="../ManagerServlet" >
                 <div class="biaodan">
                     <div class="biaodan-input">
                         <b>管理员账号</b>
-                        <input id="inputzhanghao" placeholder="请输入账号" name="zhanghao">
+                        <input type="text" id="inputzhanghao" placeholder="请输入账号" name="zhanghao">
                     </div>
                     <div class="biaodan-input">
                         <b>管理员密码</b>
-                        <input id="inputmima" placeholder="请输入密码" name="mima">
+                        <input type="password" id="inputmima" placeholder="请输入密码" name="mima">
                     </div>
                     <input type="submit" class="manager-button" value="登录">
                 </div>

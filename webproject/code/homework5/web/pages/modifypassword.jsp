@@ -36,23 +36,21 @@
             <div class="modifypassword-infor-insert-content">
                 修改密码
             </div>
-            <form method="POST" name="biaodanpost">
-                <div class="biaodan">
-                    <div class="biaodan-input">
-                        <b>账号</b>
-                        <input id="inputzhanghao" placeholder="请输入账号" name="zhanghao">
-                    </div>
-                    <div class="biaodan-input">
-                        <b>原密码</b>
-                        <input id="inputoldmima" placeholder="请输入原密码" name="oldmima">
-                    </div>
-                    <div class="biaodan-input">
-                        <b>新密码</b>
-                        <input id="inputnewmima" placeholder="请输入新密码" name="newmima">
-                    </div>
-                    <input type="submit" class="modifypassword-button" value="确认修改">
+            <div class="biaodan">
+                <div class="biaodan-input">
+                    <b>账号</b>
+                    <input id="inputzhanghao" placeholder="请输入账号" name="zhanghao">
                 </div>
-            </form>
+                <div class="biaodan-input">
+                    <b>原密码</b>
+                    <input id="inputoldmima" placeholder="请输入原密码" name="oldmima">
+                </div>
+                <div class="biaodan-input">
+                    <b>新密码</b>
+                    <input id="inputnewmima" placeholder="请输入新密码" name="newmima">
+                </div>
+                <input type="button" class="modifypassword-button" value="确认修改" onclick="modifypassword()">
+            </div>
         </div>
         <div class="modifypassword-infor-developer">
             开发者 : Southyang. <br>
@@ -60,7 +58,12 @@
             邮箱地址 : 8208xxxxxx@csu.edu.cn
         </div>
     </div>
+    <!-- 回到首页 -->
+    <a class="go-login" href="../login.jsp">
+        回到首页
+    </a>
 </div>
 </body>
+<script type="text/javascript" src="../js/modifypassword.js"></script>
 <script type="text/javascript" src="../js/lunbotu.js"></script>
 </html>

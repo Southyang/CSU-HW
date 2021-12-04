@@ -119,6 +119,20 @@
     margin: 20px 0;
 }
 
+.errorinput{
+    position: absolute;
+    top: 52px;
+    left: 70px;
+    font-size: 15px;
+}
+
+.errorinput1{
+    position: absolute;
+    top: 156px;
+    left: 70px;
+    font-size: 15px;
+}
+
 .biaodan-input>input{
     text-align: left;
     height: 30px;
@@ -126,12 +140,12 @@
     border-radius: 5px;
 }
 
-.biaodan-input>img{
+.biaodan-input>span>img{
     position: absolute;
-    height: 60px;
-    width: 200px;
-    top: 113px;
-    left: 180px;
+    height: 30px;
+    width: 100px;
+    top: 125px;
+    left: 217px;
 }
 
 .biaodan-input>img:hover , .youxiangbiaodan-input>img:hover{
@@ -156,12 +170,12 @@
     border-radius: 5px;
 }
 
-.youxiangbiaodan-input>img{
+.youxiangbiaodan-input>span>img{
     position: absolute;
-    height: 60px;
-    width: 200px;
-    top: 58px;
-    left: 180px;
+    height: 30px;
+    width: 100px;
+    top: 73px;
+    left: 217px;
 }
 
 .huoqu{
@@ -228,4 +242,16 @@
     color: white;
     text-align: center;
     font-size: 15px;
+}
+
+.go-manager{
+    position: fixed;
+    top: 1vh;
+    right: 1vh;
+    text-decoration:none;
+    background-color: deepskyblue;
+    border-radius: 15px;
+    padding: 5px 5px;
+    cursor: pointer;
+    color: black;
 }

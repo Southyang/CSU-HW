@@ -12,7 +12,7 @@
   </head>
   <body>
   <%   // 重定向到新地址
-    String site = new String("/test_war_exploded/pages/login.jsp");
+    String site = new String("/test_war_exploded/login.jsp");
     response.setStatus(response.SC_MOVED_TEMPORARILY);
     response.setHeader("Location", site);
   %>
