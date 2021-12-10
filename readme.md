@@ -29,4 +29,6 @@
 - homework5：SVM
 - homework6：DecisionTree
 - homework7：EnsembleLearning
+- homework8：Clustering
+- homework9：DimensionalityReduction
 
