@@ -1,0 +1,35 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl white
+Ns 500
+Ka 0.0 0.0 0.0
+Kd 1.0 1.0 1.0
+Ks 0.0 0.0 0.0
+d 1
+illum 2
+
+newmtl green
+Ns 500
+Ka 0.0 0.0 0.0
+Kd 0.0 1.0 0.0
+Ks 0.0 0.0 0.0
+d 1
+illum 2
+
+newmtl red
+Ns 500
+Ka 0.0 0.0 0.0
+Kd 1.0 0.0 0.0
+Ks 0.0 0.0 0.0
+d 1
+illum 2
+
+newmtl logo
+Ns 500
+Ka 0.0 0.0 0.0
+Kd 0.8 0.8 0.8 
+Ks 0.0 0.0 0.0
+d 1
+illum 2
+map_Kd southyang.jpg

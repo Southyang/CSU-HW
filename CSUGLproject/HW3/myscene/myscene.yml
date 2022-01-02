@@ -1,0 +1,106 @@
+name: cornellbox
+film:
+  w: 800
+  h: 800
+accel: bvh
+integrator: 
+  type: whitted
+  max_depth: 8
+  spp: 2000
+  illumination: global
+  gamma: true
+camera: 
+  lookFrom: [0.0,0.0,1.0]
+  lookAt: [0.0,0.0,-3.0]
+  foV: 60.0
+primitives:
+  -
+    type: model #加载模型
+    file: cornellbox.obj
+    transform: 
+      translate: [0, 0, -1.5,]
+      rotation: 
+        axis: [0, 1, 0,]
+        angle: 0
+      scale: [2.0, 2.0, 2.0,]
+    material: 
+      bsdf: 
+        type: LambertianReflection
+      shader: 
+        type: model
+  -
+    type: sphere
+    radius: 1.0
+    transform: 
+      translate: [0.0, -0.65, -1.5,]
+      rotation: 
+        axis: [0, 1, 0,]
+        angle: 0
+      scale: [0.3, 0.3, 0.3,]
+    material: 
+      bsdf: 
+        type: LambertianReflection
+      shader: 
+        type: custom
+        intensity: 1.0
+        Kd: [1.0, 1.0, 1.0,]
+        Ks: [0.8, 0.8, 0.8,]
+        tex_d: earth.jpg
+  -
+    type: model #加载模型
+    file: testcube.obj
+    transform: 
+      translate: [0.5, -0.7, -1.5,]
+      rotation: 
+        axis: [0, 1, 0,]
+        angle: -90
+      scale: [0.35, 0.35, 0.35,]
+    material: 
+      bsdf: 
+        type: LambertianReflection
+      shader: 
+        type: model
+  -
+    type: model #加载模型
+    file: Mari.obj
+    transform: 
+      translate: [0.5, -0.5, -1.5,]
+      rotation: 
+        axis: [0, 1, 0,]
+        angle: -45
+      scale: [0.2, 0.2, 0.2,]
+    material: 
+      bsdf: 
+        type: LambertianReflection
+      shader: 
+        type: model
+  -
+    type: model #加载模型
+    file: yasuo.obj
+    transform: 
+      translate: [-0.5, -0.9, -1.5,]
+      rotation: 
+        axis: [0, 1, 0,]
+        angle: 45
+      scale: [0.005, 0.005, 0.005,]
+    material: 
+      bsdf: 
+        type: LambertianReflection
+      shader: 
+        type: model
+        tex_d: yasuo.jpg
+  -
+    type: model
+    file: plane.obj
+    transform: 
+      translate: [0.0, 0.99, -1.5,]
+      rotation: 
+        axis: [0, 1, 0,]
+        angle: 0
+      scale: [0.3, 0.3, 0.3,]
+    material: 
+      shader: 
+        intensity: 10.0
+        type: custom
+        Kd: [1.0, 1.0, 0.8,]
+        Ks: [0.8, 0.8, 0.8,]
