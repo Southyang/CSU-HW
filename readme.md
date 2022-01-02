@@ -32,3 +32,11 @@
 - homework8：Clustering
 - homework9：DimensionalityReduction
 
+
+
+## 项目四：CSUGL project
+
+- homework1：绘制三角形、圆并实现拖拽、变色
+- homework2：纹理贴图
+- homework3：简单的光线追踪实现
+
