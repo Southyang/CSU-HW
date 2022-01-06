@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>管理员登录界面</title>
+    <link rel="stylesheet" type="text/css" href="../css/managerlogin.css">
+    <script src="../js/managerlogin.js"></script>
+</head>
+
+<body>
+    <div>
+        <div>
+            <!-- 左上角部分 -->
+            <div class="chrome">
+                <span>欢迎</span>
+                <span>使用</span>
+            </div>
+
+        </div>
+
+        <!-- 中间部分 -->
+        <div class="center">
+            <!-- 登陆框 -->
+            <div class="user">
+                <p class="cuser">账号登录</p>
+                <!-- 用户名密码及登录按钮部分 -->
+                <div class="form">
+                    <div class="user1">
+                        <img src="../images/user.png" alt="">
+
+                        <input type="text" placeholder="用户名" id="username">
+                    </div>
+                    <div class="user2">
+                        <img src="../images/passwd.png" alt="">
+                        <input type="password" placeholder="密码" id="password">
+                    </div>
+                    <div>
+                        <button onclick="login()" id="loginbutton">马上登录</button>
+                    </div>
+                </div>
+                <div style="height: 25px;"></div>
+                <div class="mima">
+                    <p class="jz">
+                        <input type="checkbox" class="box">
+                        <span>记住密码</span>
+                    </p>
+                    <p class="wj">
+                        <a href="#">忘记密码?</a>
+                    </p>
+                    <p class="zc">
+                        <a href="#">免费注册</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部部分 -->
+        <div class="foot">
+            <p class="banquan">
+                2022年1月6日 <a href="http://southyang.cn">By Southyang</a>
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

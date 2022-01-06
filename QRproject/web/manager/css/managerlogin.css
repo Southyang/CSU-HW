@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+button{
+    cursor: pointer;
+}
+
+body {
+    background: url(../images/m.jpg);
+    background-repeat: no-repeat;
+}
+
+.chrome {
+    position: absolute;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+    background-color: rgba(150, 164, 224, .17);
+    color: #eaedf9;
+    padding: 0 11px;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+#a {
+    color: #6bd3fe;
+    text-decoration: none;
+}
+
+.nav {
+    width: 100%;
+    padding-top: 200px;
+}
+
+.logo {
+    width: 240px;
+    margin: 0 auto;
+}
+
+.hlogo {
+    width: 240px;
+    height: 70px;
+    background: url(../images/lenovo-learning.png) no-repeat center -42px;
+    background-size: 90%;
+    margin-top: 10px;
+}
+
+.logo p {
+    font-family: "\5FAE\8F6F\96C5\9ED1", "Hiragino Sans GB";
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: -32px;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* 中间部分样式 */
+.center {
+    padding-top: 200px;
+}
+
+/* 登录框样式 */
+.user {
+    border-radius: 20px;
+    width: 388px;
+    height: 320px;
+    background-color: #f2f7fa;
+    margin: 0 auto;
+    padding-top: 4px;
+    line-height: 54px;
+}
+
+/* “账号登录”样式 */
+.cuser {
+    text-align: center;
+    color: #606060;
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+/* 输入邮箱行 */
+.form .user1 {
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-bottom: 1px solid #e1e6e9;
+    overflow: hidden;
+}
+
+/* 输入密码行 */
+.form .user2 {
+    width: 320px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-bottom: 1px solid #e1e6e9;
+    overflow: hidden;
+
+}
+
+/* 小图标样式 */
+.form div img {
+    width: 15px;
+}
+
+/* 输入框样式 */
+.form div input {
+    width: 288px;
+    border: none;
+    height: 27px;
+    line-height: 27px;
+    text-indent: 5px;
+    margin-top: -7px;
+    background-color: #f2f7fa;
+}
+
+/* 登录按钮样式 */
+.form div button {
+    width: 320px;
+    height: 36px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #49c0e0;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+    border: 1px solid #49c0e0;
+    color: #feffff;
+    letter-spacing: 1px;
+}
+
+/* 找回密码 */
+.mima {
+    text-indent: 37px;
+    font-size: 12px;
+    color: #909090;
+    line-height: 20px;
+}
+
+.js .box {
+    font-size: 12px;
+    color: #000000;
+    border: 1px solid #006600;
+    background-color: #DBFBF7;
+}
+
+.jz {
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+/* 立即找回 */
+.wj a {
+    display: block;
+    float: left;
+    text-indent: 37px;
+    font-size: 12px;
+    color: #909090;
+    line-height: 20px;
+    margin-left: 72px;
+    text-decoration: none;
+}
+
+/* 立即注册 */
+.zc a {
+    display: block;
+    text-indent: 37px;
+    font-size: 12px;
+    color: #909090;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+/* 底部部分 */
+.foot {
+    height: 30px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 1px;
+    padding-top: 15px;
+}
+
+/* 底部所有p标签 */
+.foot p {
+    text-align: center;
+    line-height: 2.2;
+    color: white;
+    font-size: 12px;
+    font-family: "iconfont";
+}
+
+/* 联系我们样式 */
+.foot p a {
+    margin: 0 43px;
+    color: #bebfd1;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+/* 联系部分 */
+.call {
+    text-align: center;
+    line-height: 2.2;
+    color: #9196b3;
+    font-size: 12px;
+    font-family: "iconfont";
+}

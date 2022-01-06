@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".View.User.UserLoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:hint="输入单号查询快递"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/findqr"
+            android:text=""
+            android:textSize="24dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/findqrbtn"
+            android:text="查询快递"
+            android:gravity="right"
+            android:textSize="24dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:gravity="center"
+        android:id="@+id/idinfor"
+        android:text=""
+        android:textSize="80px"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/qrimage"
+        android:textSize="80px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameinfor"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:text=""
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/telinfor"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text=""
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/addressinfor"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text=""
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kindsinfor"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text=""
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/stateinfor"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:text=""
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="我要寄件"
+            android:textSize="80px" />
+    </LinearLayout>
+</LinearLayout>

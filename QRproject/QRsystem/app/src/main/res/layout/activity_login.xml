@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.User.UserLoginActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/userloginview">
+
+    <TextView
+        android:id="@+id/username_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="180px"
+        android:text="用户名"
+        android:width="200px"
+        android:textSize="60px" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="150px"
+        android:layout_toRightOf="@+id/username_msg"
+        android:width="500px"
+        android:hint="请输入用户名"
+        android:inputType="text"
+        android:maxLines="12"
+        android:textSize="60px" />
+
+    <TextView
+        android:id="@+id/password_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_msg"
+        android:layout_marginLeft="200px"
+        android:layout_marginTop="180px"
+        android:text="密     码"
+        android:width="200px"
+        android:textSize="60px" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:layout_below="@+id/username_msg"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="150px"
+        android:layout_toRightOf="@+id/password_msg"
+        android:width="500px"
+        android:hint="请输入密码"
+        android:inputType="text"
+        android:maxLines="12"
+        android:textSize="60px" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:id="@+id/userlogin"
+        android:layout_below="@id/password_msg"
+        android:layout_marginLeft="280px"
+        android:layout_marginTop="150px"
+        android:textSize="60px"/>
+
+     <Button
+         android:id="@+id/userexit"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/userlogin"
+         android:text="退出"
+         android:layout_below="@id/password_msg"
+         android:layout_marginTop="150px"
+         android:textSize="60px"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/printfinfor"
+        android:text=""
+        android:layout_below="@id/userloginview"
+        android:textSize="80px"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/userotherview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userloginview">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找回密码"
+            android:id="@+id/usergetpassword"
+            android:layout_marginLeft="220px"
+            android:width="300px"
+            android:layout_marginTop="500px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新用户注册"
+            android:id="@+id/userregister"
+            android:layout_toRightOf="@+id/usergetpassword"
+            android:width="300px"
+            android:layout_marginTop="500px"/>
+
+    </RelativeLayout>
+</RelativeLayout>

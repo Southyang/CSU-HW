@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QR保护系统-管理员</title>
+    <link rel="stylesheet" type="text/css" href="../css/manager.css">
+    <script language="javascript" type="text/javascript">
+        /* var loc = location.href;
+        var n1 = loc.length;//地址的总长度
+        var n2 = loc.indexOf("=");//取得=号的位置
+        var id = decodeURI(loc.substr(n2+1, n1-n2));//从=号后面的内容 */
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align: center;" id="title" >管理员系统</h1>
+        <button class="update" onclick="update()">刷新</button>
+        <div id="objectlist" class="objectlist">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>快递单号</th>
+                        <th>收件人姓名</th>
+                        <th>收件人电话</th>
+                        <th>收件人地址</th>
+                        <th>快递种类</th>
+                        <th>快递权限</th>
+                        <th>快递状态</th>
+                        <th>权限修改</th>
+                    </tr>
+                </thead>
+                <tbody id="list" >
+        
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="../js/manager.js"></script>
+</body>
+
+</html>

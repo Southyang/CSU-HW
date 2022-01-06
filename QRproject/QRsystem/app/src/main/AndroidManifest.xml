@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.qrsystem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 摄像头权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/personinfor"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/personinfor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity android:name=".View.Delivery.DeliveryLoginActivity" />
+        <activity android:name=".View.Delivery.Delivery" />
+        <activity android:name=".View.Delivery.Deliveryregister"/>
+        <activity android:name=".View.Delivery.Deliverypassword"/>
+
+        <activity android:name=".View.Manager.ManagerLoginActivity" />
+        <activity android:name=".View.Manager.Manager" />
+        <activity android:name=".View.Manager.Managerregister"/>
+        <activity android:name=".View.Manager.Managerpassword"/>
+        <activity android:name=".View.Manager.Qrinfor"/>
+
+        <activity android:name=".View.User.UserLoginActivity" />
+        <activity android:name=".View.User.User" />
+        <activity android:name=".View.User.InputInfor" />
+        <activity android:name=".View.User.Userregister"/>
+        <activity android:name=".View.User.Userpassword"/>
+
+        <!-- 调整二维码扫描界面为竖屏 -->
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

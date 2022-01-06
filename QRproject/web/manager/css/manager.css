@@ -1,0 +1,33 @@
+.objectlist {
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.update {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+}
+table {
+    /* 居中显示 */
+    width: 700px;
+    margin: 100px auto;
+    /* 单元格单线 */
+    border-collapse: collapse;
+    /* 文字居中 */
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid #333;
+}
+
+/* 表头的行的高和背景色 */
+thead tr {
+    height: 40px;
+    background-color: #ccc;
+}

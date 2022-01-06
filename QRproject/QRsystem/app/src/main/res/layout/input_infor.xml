@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pagename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="240px"
+        android:layout_marginTop="50px"
+        android:text="收件人信息填写"
+        android:textSize="80px" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputinforview"
+        android:layout_below="@+id/pagename">
+
+        <TextView
+            android:id="@+id/receiver_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="180px"
+            android:text="姓名"
+            android:width="240px"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/receiver_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="150px"
+            android:layout_toRightOf="@+id/receiver_msg"
+            android:width="500px"
+            android:hint="请输入收件人姓名"
+            android:inputType="text"
+            android:maxLines="12"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/tel_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiver_msg"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="180px"
+            android:text="手机号"
+            android:width="240px"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/tel_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/receiver_msg"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="150px"
+            android:layout_toRightOf="@+id/tel_msg"
+            android:width="500px"
+            android:hint="请输入收件人手机号"
+            android:inputType="text"
+            android:maxLines="12"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/house_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tel_msg"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="180px"
+            android:text="地址"
+            android:width="240px"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/house_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tel_msg"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="150px"
+            android:layout_toRightOf="@+id/house_msg"
+            android:width="500px"
+            android:hint="请输入收件人地址"
+            android:inputType="text"
+            android:maxLines="12"
+            android:textSize="60px" />
+
+        <TextView
+            android:id="@+id/kinds_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/house_msg"
+            android:layout_marginLeft="150px"
+            android:layout_marginTop="180px"
+            android:text="快递类型"
+            android:width="240px"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/kinds_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/house_msg"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="150px"
+            android:layout_toRightOf="@+id/kinds_msg"
+            android:width="500px"
+            android:hint="请输入快递类型"
+            android:inputType="text"
+            android:maxLines="12"
+            android:textSize="60px" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交"
+            android:id="@+id/usercommit"
+            android:layout_below="@id/kinds_msg"
+            android:layout_marginLeft="280px"
+            android:layout_marginTop="150px"
+            android:textSize="60px"/>
+
+        <Button
+            android:id="@+id/userexit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/usercommit"
+            android:text="退出"
+            android:layout_below="@id/kinds_msg"
+            android:layout_marginTop="150px"
+            android:textSize="60px"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/printfinfor"
+        android:text=""
+        android:layout_below="@id/inputinforview"
+        android:textSize="80px"
+        android:gravity="center"/>
+
+</RelativeLayout>

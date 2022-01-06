@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="QR信息保护系统"
+        android:layout_marginTop="150px"
+        android:textSize="100px"/>
+
+    <Button
+        android:id="@+id/userbutton"
+        android:layout_below="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是用户"
+        android:textSize="50px"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/round_button"/>
+
+    <Button
+        android:id="@+id/deliverybutton"
+        android:layout_below="@+id/userbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是快递员"
+        android:textSize="50px"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/round_button"/>
+
+    <Button
+        android:id="@+id/managerbutton"
+        android:layout_below="@+id/deliverybutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我是管理员"
+        android:textSize="50px"
+        android:layout_marginLeft="320px"
+        android:layout_marginTop="80px"
+        android:background="@drawable/round_button"/>
+
+
+
+</RelativeLayout>
