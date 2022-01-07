@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/tv1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="#72c1e1"
         android:src="@drawable/ditu1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="-18px"
         android:layout_marginLeft="100px"
+        android:layout_marginTop="-18px"
         android:text="手势交互式系统1"
         android:textSize="120px" />
 
@@ -23,40 +23,48 @@
         android:id="@+id/action1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:textSize="120px"
-        android:width="900px"
-        android:height="300px"
         android:layout_marginLeft="0px"
         android:layout_marginTop="150px"
-        android:gravity="center"/>
+        android:width="900px"
+        android:height="300px"
+        android:gravity="center"
+        android:text=""
+        android:textSize="120px" />
 
     <TextView
         android:id="@+id/content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="第一页"
-        android:layout_marginTop="1000px"
         android:layout_marginLeft="300px"
-        android:textSize="80px"/>
+        android:layout_marginTop="1000px"
+        android:text="第一页"
+        android:textSize="80px" />
 
 
     <ImageView
         android:id="@+id/picture1"
         android:layout_width="300px"
         android:layout_height="300px"
-        android:layout_marginTop="1200px"
         android:layout_marginLeft="240px"
+        android:layout_marginTop="1200px"
         android:adjustViewBounds="true"
-        android:src="@drawable/lan"/>
+        android:src="@drawable/lan" />
 
-    <Button
-        android:id="@+id/change1"
+
+
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="切换"
-        android:textSize="80px"
-        android:layout_marginTop="2050px"
-        android:gravity="center"/>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/change1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="切换"
+            android:textSize="80px" />
+    </LinearLayout>
 
 </RelativeLayout>

@@ -21,7 +21,6 @@ public class OtherActivity extends Activity {
     float postionX;
     float postionY;
     float distance;
-    ImageView tv1;
     TextView action1;
     TextView content;
     ImageView picture1;
@@ -34,7 +33,6 @@ public class OtherActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_other);
 
-        tv1 = (ImageView)findViewById(R.id.tv1);
         action1 = (TextView)findViewById(R.id.action1);
         content = (TextView)findViewById(R.id.content);
         content.setText(bookcontent[flag]);

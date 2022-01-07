@@ -45,13 +45,19 @@
         android:adjustViewBounds="true"
         android:src="@drawable/lan" />
 
-    <Button
-        android:id="@+id/change"
+    <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="切换"
-        android:textSize="80px"
-        android:layout_marginTop="2050px"
-        android:gravity="center"/>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/change"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="切换"
+            android:textSize="80px" />
+    </LinearLayout>
 
 </RelativeLayout>
