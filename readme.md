@@ -40,3 +40,11 @@
 - homework2：纹理贴图
 - homework3：简单的光线追踪实现
 
+
+
+## 项目五：Android + Web + MySQL 应用实践
+
+- 实现一个二维码信息保护系统
+
+
+
