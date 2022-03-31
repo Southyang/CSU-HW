@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.osstransmit.config;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Configuration;
