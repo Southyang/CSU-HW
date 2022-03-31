@@ -39,9 +39,9 @@ writechar  macro arra,row,color,cc ;x
              DB 9,9,9,'-------------------------------',0DH,0AH  ;回车换行
              DB 9,9,9,'|  Welcome to Clock System    |',0DH,0AH  
              DB 9,9,9,'|                             |',0DH,0AH
-             DB 9,9,9,'|  name:   South_yang         |',0DH,0AH 
-             DB 9,9,9,'|  class:  CS1903             |',0DH,0AH     
-             DB 9,9,9,'|  Number: 8208190213         |',0DH,0AH 
+             DB 9,9,9,'|  name:  xxxxxxxxxx         |',0DH,0AH 
+             DB 9,9,9,'|  class:  xxxxxxxx             |',0DH,0AH     
+             DB 9,9,9,'|  Number: xxxxxxxxxx       |',0DH,0AH 
              DB 9,9,9,'------------------------------- ',0DH,0AH,'$' 
              
         MSG1 DB 0DH,0AH,9,9,9,'press any key to begin.....',0DH,0AH,'$'  ;提示信息 
